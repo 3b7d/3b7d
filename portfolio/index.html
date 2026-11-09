@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1018">
+<meta name="description" content="3B7D — معرض أعمال رقمية يضم مواقع ويب منشورة وتجارب ذكاء اصطناعي ومشاريع تصميم وتطوير.">
+<meta property="og:title" content="3B7D — أعمالي الرقمية">
+<meta property="og:description" content="أفكار تتحول إلى منتجات وتجارب رقمية قابلة للاستكشاف.">
+<meta property="og:type" content="website">
+<title>3B7D — أعمالي الرقمية | Digital Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080c13;--panel:#101823;--panel2:#131d28;--text:#f0f4f4;--soft:#a1b4b9;--line:#24313b;--lime:#c4f68d;--lime2:#99d970;--shadow:0 28px 80px #0005}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;font-size:15px;-webkit-font-smoothing:antialiased}
+body.light{--bg:#f4f7f5;--panel:#ffffff;--panel2:#ecf1ed;--text:#111d1c;--soft:#526565;--line:#d9e3de;--lime:#5e963c;--lime2:#47772f;--shadow:0 28px 80px #22352c15}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
+::selection{background:var(--lime);color:#111}
+.container{width:min(1180px,calc(100% - 48px));margin:auto}
+.skip{position:absolute;top:-100px;right:20px;background:var(--lime);color:#08100b;padding:12px;border-radius:12px;z-index:100}
+.skip:focus{top:10px}
+.glow{pointer-events:none;position:absolute;width:650px;height:650px;right:-260px;top:0;background:radial-gradient(circle,#8aca6530,transparent 68%);filter:blur(8px)}
+.glow2{pointer-events:none;position:absolute;width:470px;height:470px;left:-190px;top:420px;background:radial-gradient(circle,#557eaa1f,transparent 67%)}
+.topbar{height:78px;position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 86%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+.top-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font:700 25px "Space Grotesk",sans-serif;letter-spacing:-1.4px;direction:ltr;display:flex;align-items:center;gap:10px}
+.brand em{font-style:normal;color:var(--lime)}.brand .orbit{height:31px;width:31px;display:grid;place-items:center;border-radius:10px;background:var(--lime);color:#152013;font-size:18px}
+.desktop-nav{display:flex;align-items:center;gap:37px;color:var(--soft);font-size:13px}
+.desktop-nav a:hover,.desktop-nav a.active{color:var(--text)}
+.actions{display:flex;align-items:center;gap:12px}
+.icon-btn{width:41px;height:41px;border:1px solid var(--line);border-radius:50%;color:var(--text);background:var(--panel);display:grid;place-items:center;font-size:17px}
+.cta-small{display:flex;gap:9px;align-items:center;border-radius:100px;background:var(--lime);color:#101a10;font-size:12px;font-weight:700;padding:12px 20px;transition:transform .2s}
+.cta-small:hover{transform:translateY(-2px)}
+.mobile-menu{display:none}
+.mobile-nav{display:none}
+.hero{position:relative;overflow:hidden;padding:110px 0 80px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.12fr .88fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--lime);font:500 12px "Space Grotesk","IBM Plex Sans Arabic",sans-serif;letter-spacing:.5px}
+.eyebrow:before{content:"";width:30px;height:1px;background:var(--lime)}
+.hero h1{font-size:clamp(41px,5.4vw,77px);line-height:1.38;letter-spacing:-2.5px;font-weight:700;margin:25px 0 20px}
+.hero h1 .accent{color:var(--lime);position:relative;white-space:nowrap}
+.hero h1 .accent:after{content:"";position:absolute;bottom:-6px;right:0;width:100%;height:7px;border:1.5px solid var(--lime);border-radius:50%;transform:rotate(-3deg);opacity:.7}
+.hero-copy p{max-width:540px;color:var(--soft);font-size:16px;line-height:2.1;margin:24px 0 30px}
+.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn-primary,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:17px;border-radius:12px;padding:15px 23px;font-weight:700;font-size:13px;transition:transform .2s,border-color .2s}
+.btn-primary{background:var(--lime);color:#12200e}
+.btn-secondary{border:1px solid var(--line);color:var(--text);background:var(--panel)}
+.btn-primary:hover,.btn-secondary:hover{transform:translateY(-3px)}
+.hero-note{display:flex;align-items:center;gap:12px;margin-top:44px;color:var(--soft);font-size:12px}
+.avatars{display:flex;direction:ltr}.avatars span{display:grid;place-items:center;width:33px;height:33px;margin-right:-7px;border:2px solid var(--bg);border-radius:50%;font-size:13px;background:#2e4d51;color:#d5edf0}.avatars span:nth-child(2){background:#294e34}.avatars span:nth-child(3){background:#4a395d}
+.hero-visual{position:relative;min-height:470px;display:flex;align-items:center;justify-content:center}
+.halo{position:absolute;width:450px;height:450px;border:1px solid #8dcf9b26;border-radius:50%;box-shadow:0 0 90px #86db8125;animation:spin 35s linear infinite}
+.halo:before,.halo:after{content:"";position:absolute;border:1px dashed #a2dfb831;border-radius:50%;inset:48px}.halo:after{inset:94px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.browser{position:relative;z-index:2;width:min(100%,440px);border:1px solid #526873;background:#111c26;box-shadow:0 35px 95px #0008;border-radius:20px;transform:rotate(-5deg);overflow:hidden;color:#edf8ef}
+.browser-top{height:45px;border-bottom:1px solid #35444b;display:flex;align-items:center;padding:0 18px;gap:6px;direction:ltr}
+.dot{height:8px;width:8px;border-radius:50%;background:#ed756c}.dot:nth-child(2){background:#e6ba66}.dot:nth-child(3){background:#88cba2}
+.browser-url{margin:auto;border:1px solid #324047;padding:4px 32px;border-radius:7px;color:#79929a;font:10px "Space Grotesk"}
+.browser-content{padding:27px}
+.browser-title{display:flex;align-items:center;justify-content:space-between;font:600 12px "Space Grotesk"}
+.browser-title small{color:#91b49e;font-size:9px}
+.browser-heading{font-size:27px;line-height:1.5;margin:29px 0 15px;font-weight:700}
+.browser-heading span{color:#baf484}
+.browser-lines{display:grid;gap:9px;max-width:260px}.browser-lines i{height:7px;background:#30424b;border-radius:20px}.browser-lines i:nth-child(2){width:65%}
+.mini-projects{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.mini-project{border:1px solid #394b4e;border-radius:12px;padding:16px 13px 13px;min-height:110px;background:#192730}
+.mini-project:nth-child(1){background:linear-gradient(140deg,#9a846b,#372e34)}.mini-project:nth-child(2){background:linear-gradient(140deg,#506333,#182329)}
+.mini-project span{font-size:10px;color:#eff7dfad}.mini-project strong{font-size:18px;display:block;margin-top:8px}
+.float-label{position:absolute;z-index:3;display:flex;gap:8px;align-items:center;background:#effde9;color:#16301c;border-radius:14px;padding:13px 17px;box-shadow:0 17px 55px #0007;font-size:12px;font-weight:700;left:-3%;top:15%;transform:rotate(5deg)}
+.float-label span{font:500 11px "Space Grotesk"} .float-bottom{left:auto;right:-2%;top:auto;bottom:6%;background:#dbeafa;color:#1a304b;transform:rotate(-5deg)}
+.marquee-bar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0;background:var(--panel)}
+.marquee-list{display:flex;justify-content:space-between;gap:20px;align-items:center;color:var(--soft);font:600 clamp(11px,1.5vw,15px) "Space Grotesk","IBM Plex Sans Arabic",sans-serif;letter-spacing:.6px;flex-wrap:wrap}
+.marquee-list span{white-space:nowrap}.marquee-list b{color:var(--lime)}
+.section{padding:105px 0}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}
+.kicker{color:var(--lime);font:600 12px "Space Grotesk","IBM Plex Sans Arabic";letter-spacing:1px}
+.section h2{font-size:clamp(30px,3.5vw,49px);letter-spacing:-1.1px;line-height:1.48;margin:11px 0 8px}
+.section-sub{color:var(--soft);font-size:13px;max-width:500px;line-height:2}
+.counter{font:600 66px "Space Grotesk";color:color-mix(in srgb,var(--soft) 24%,transparent);letter-spacing:-6px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:5px 0 28px}
+.filter{padding:10px 17px;border-radius:100px;border:1px solid var(--line);background:var(--panel);color:var(--soft);font-size:12px;transition:all .2s}
+.filter.active,.filter:hover{background:var(--lime);color:#15220d;border-color:var(--lime)}
+.project-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:19px}
+.project{grid-column:span 3;background:var(--panel);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,border-color .25s;min-width:0}
+.project:hover{transform:translateY(-6px);border-color:#76a78486}
+.project.hidden{display:none}
+.project.wide{grid-column:span 3}
+.preview{height:250px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.preview:after{content:"";position:absolute;inset:0;opacity:.25;background:radial-gradient(circle at 50% 0%,#fff5,transparent 65%)}
+.preview .pretag{position:absolute;top:17px;right:18px;z-index:2;background:#0e1820a6;color:#fff;backdrop-filter:blur(9px);border:1px solid #ffffff2e;border-radius:100px;padding:6px 11px;font-size:10px}
+.preview.nasam{background:linear-gradient(135deg,#e1d2be,#b99d88)}
+.preview.nasam .art{color:#483227;text-align:center;font-size:58px;font-weight:600;letter-spacing:-2px;position:relative;z-index:2}.preview.nasam .art small{font:400 11px "Space Grotesk";display:block;letter-spacing:5px}
+.perfume{position:absolute;bottom:-40px;right:12%;width:95px;height:140px;background:linear-gradient(135deg,#eee5d9ba,#895f47a1);border:2px solid #fff9;box-shadow:20px 17px 35px #58483855;transform:rotate(16deg);border-radius:12px 12px 18px 18px}
+.perfume:before{content:"";position:absolute;width:35px;height:34px;background:#3b2b23;top:-34px;right:28px;border-radius:4px 4px 0 0}
+.preview.mustawa{background:radial-gradient(circle at 50% 20%,#415335,#11191b 72%)}
+.preview.mustawa .art{color:#f7fff0;text-align:center;position:relative;z-index:1;font-size:60px;font-weight:700}
+.preview.mustawa .art b{color:#b8ff38}.preview.mustawa .art small{display:block;font-size:12px;color:#d6e8bb;font-weight:400;margin-top:-2px}
+.preview.athar{background:radial-gradient(circle at 47% 20%,#b68e8a,#4e3b55 70%,#261e35)}
+.preview.athar .art{font-size:40px;color:#fff3e1;position:relative;text-align:center;z-index:1;font-weight:600}
+.preview.athar .art small{display:block;font-size:13px;font-weight:400;opacity:.7}
+.preview.athar .envelope{width:90px;height:57px;background:#e9c1af;border:2px solid #fce2cb;position:absolute;bottom:20px;left:15%;border-radius:4px;transform:rotate(-14deg);box-shadow:15px 16px 0 #ffffff18}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(27deg,transparent 49%,#fff6 50%,transparent 52%)}
+.preview.prompt{background:linear-gradient(125deg,#152e5e,#15202e)}.preview.staging{background:linear-gradient(125deg,#365648,#1b2d2f)}
+.preview.shield{background:linear-gradient(125deg,#322e66,#171b3b)}
+.preview.cards{background:linear-gradient(125deg,#b27453,#513d48)}
+.preview.ops{background:linear-gradient(125deg,#25556e,#172933)}
+.preview .symbol{font:700 90px "Space Grotesk";color:#fff3;position:absolute;left:15px;top:0;transform:rotate(-12deg)}
+.preview .art-icon{width:100px;height:100px;display:grid;place-items:center;z-index:1;border:1px solid #ffffff59;border-radius:26px;background:#ffffff18;box-shadow:0 25px 70px #0004;color:white;font:700 43px "Space Grotesk"}
+.project-info{padding:24px 25px 26px}
+.project-overline{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--soft);font-size:10px}
+.live-dot{display:inline-block;width:7px;height:7px;background:#93de81;border-radius:50%;margin-left:5px}
+.project-info h3{margin:10px 0 8px;font-size:22px;font-weight:700;line-height:1.5}
+.project-info p{color:var(--soft);font-size:12px;line-height:1.9;min-height:45px;margin:0 0 18px}
+.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{border:1px solid var(--line);background:var(--panel2);border-radius:7px;font:500 10px "Space Grotesk","IBM Plex Sans Arabic";padding:7px 9px;color:var(--soft)}
+.project-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:25px}
+.project-actions a{font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:8px}
+.project-actions a:hover{color:var(--lime)}.project-actions a.alt{color:var(--soft)}
+.github-header{margin-top:60px;display:flex;gap:15px;align-items:center;border-top:1px solid var(--line);padding-top:34px;margin-bottom:24px}
+.github-header h3{font-size:23px;margin:0}.github-header p{color:var(--soft);margin:3px 0 0;font-size:12px}
+.small-project{grid-column:span 2}
+.small-project .preview{height:170px}.small-project .project-info h3{font-size:18px}.small-project .project-info{padding:20px}.small-project .project-info p{min-height:68px}
+.about{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:100px;align-items:center}
+.about-picture{height:370px;position:relative;border-radius:25px;background:radial-gradient(circle at 40% 30%,#4d7c74,#101f29 72%);display:grid;place-items:center;overflow:hidden}
+.about-picture .big-letters{font:700 clamp(96px,12vw,170px) "Space Grotesk";letter-spacing:-14px;color:#e8fff4;transform:rotate(-8deg);text-shadow:23px 24px 0 #ffffff16}
+.about-picture .p-label{position:absolute;bottom:22px;right:23px;font:500 11px "Space Grotesk";color:#b5ddcf;letter-spacing:2px}
+.about h2{margin:12px 0 20px}.about p{line-height:2.2;color:var(--soft);font-size:14px}
+.skill-grid{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.skill-grid span{border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:12px;background:var(--bg)}
+.contact{padding:105px 0}
+.contact-box{position:relative;overflow:hidden;min-height:335px;background:linear-gradient(120deg,#b9f18b,#d8f6b7);color:#1c351f;border-radius:27px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 25px}
+.contact-box:before,.contact-box:after{position:absolute;content:"";width:330px;height:330px;border:1px solid #40683336;border-radius:50%;right:-110px;bottom:-180px}.contact-box:after{right:auto;left:-90px;bottom:auto;top:-170px}
+.contact-box .over{font:600 12px "Space Grotesk"}.contact-box h2{font-size:clamp(32px,4vw,53px);margin:14px 0 6px;line-height:1.4}
+.contact-box p{font-size:13px;opacity:.78;margin-bottom:25px}
+.contact-box a{background:#182b1d;color:#f4ffeb;border-radius:100px;padding:14px 25px;display:inline-flex;align-items:center;gap:14px;font-size:13px;font-weight:700}
+.footer{padding:25px 0 38px;border-top:1px solid var(--line);color:var(--soft);font-size:12px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer a:hover{color:var(--lime)}.footer-links{display:flex;gap:20px;align-items:center}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.desktop-nav{gap:18px}.hero-grid{gap:28px}.hero h1{font-size:clamp(41px,5.6vw,65px)}.about-grid{gap:45px}.small-project{grid-column:span 3}}
+@media(max-width:700px){
+.container{width:min(100% - 32px,1180px)}.topbar{height:68px}.desktop-nav,.cta-small{display:none}.mobile-menu{display:grid}
+.mobile-nav.open{display:flex}.mobile-nav{position:absolute;top:68px;right:0;left:0;padding:18px 24px;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;gap:15px}.mobile-nav a{padding:5px}
+.hero{padding:65px 0 60px}.hero-grid{grid-template-columns:1fr;gap:20px}.hero h1{font-size:clamp(38px,9.4vw,58px)}.hero-copy p{font-size:14px}.hero-note{margin-top:32px}.hero-visual{min-height:390px}.browser{width:min(90%,420px);transform:rotate(-4deg)}.halo{width:340px;height:340px}.float-label{left:-2%;top:12%;font-size:10px;padding:9px}.float-bottom{bottom:4%;top:auto}.marquee-list{justify-content:center;gap:17px 25px;font-size:12px}
+.section{padding:70px 0}.section-heading{align-items:start}.counter{font-size:45px}.section h2{font-size:35px}.project-grid{grid-template-columns:1fr}.project,.project.wide,.small-project{grid-column:span 1}.preview{height:220px}.small-project .preview{height:180px}.small-project .project-info p{min-height:0}.project-info p{min-height:0}
+.about-grid{grid-template-columns:1fr;gap:35px}.about-picture{height:240px}.about-picture .big-letters{font-size:95px;letter-spacing:-7px}.contact{padding:70px 0}.contact-box{min-height:300px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.halo{animation:none}*{transition-duration:0s!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">تجاوز إلى المحتوى</a>
+<header class="topbar">
+  <div class="container top-inner">
+    <a class="brand" href="#" aria-label="3B7D الرئيسية"><span class="orbit">✳</span>3B<em>7D</em></a>
+    <nav class="desktop-nav" aria-label="التنقل الرئيسي"><a href="#home">الرئيسية</a><a href="#projects">الأعمال</a><a href="#about">نبذة عني</a><a href="#contact">تواصل</a></nav>
+    <div class="actions">
+      <button class="icon-btn" id="theme" aria-label="تبديل الوضع الفاتح والداكن" title="تبديل المظهر">☾</button>
+      <a class="cta-small" href="#projects">استكشف أعمالي <span>↗</span></a>
+      <button class="icon-btn mobile-menu" id="menu" aria-expanded="false" aria-label="فتح القائمة">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="قائمة الجوال"><a href="#home">الرئيسية</a><a href="#projects">الأعمال</a><a href="#about">نبذة عني</a><a href="#contact">تواصل</a></nav>
+</header>
+<main id="content">
+<section class="hero" id="home">
+  <div class="glow"></div><div class="glow2"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">3B7D / DIGITAL PORTFOLIO</span>
+      <h1>من مجرد فكرة،<br>إلى <span class="accent">تجربة رقمية</span><br>تستحق الاستكشاف.</h1>
+      <p>أهتم بصناعة الحلول الرقمية وتصميم تجارب ويب تجمع بين الفكرة الواضحة، التفاصيل الجميلة، والتنفيذ العملي. هنا مساحة أجمع فيها أعمالي وتجربتي مع التقنية والذكاء الاصطناعي.</p>
+      <div class="hero-buttons">
+        <a class="btn-primary" href="#projects">شاهد المشاريع <span>↙</span></a>
+        <a class="btn-secondary" href="https://github.com/3b7d" target="_blank" rel="noopener noreferrer">حسابي على GitHub <span>↗</span></a>
+      </div>
+      <div class="hero-note"><div class="avatars" aria-hidden="true"><span>W</span><span>AI</span><span>UX</span></div><span>تصميم ويب · تطوير · أدوات ذكاء اصطناعي</span></div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="halo"></div>
+      <div class="float-label">✦ <span>CREATIVE / DIGITAL</span></div>
+      <div class="browser">
+        <div class="browser-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="browser-url">portfolio / selected work</span></div>
+        <div class="browser-content">
+          <div class="browser-title"><b>3B7D / LAB</b><small>● WORK IN MOTION</small></div>
+          <div class="browser-heading">نبني الفكرة.<br><span>ونجرب المستقبل.</span></div>
+          <div class="browser-lines"><i></i><i></i></div>
+          <div class="mini-projects"><div class="mini-project"><span>DESIGN / E-COMMERCE</span><strong>نَسَم</strong></div><div class="mini-project"><span>LEARNING / DIGITAL</span><strong>مستوى ↗</strong></div></div>
+        </div>
+      </div>
+      <div class="float-label float-bottom">↗ <span>BUILT WITH CURIOSITY</span></div>
+    </div>
+  </div>
+</section>
+<div class="marquee-bar"><div class="container marquee-list"><span>WEB DEVELOPMENT</span><b>✳</b><span>USER EXPERIENCE</span><b>✳</b><span>AI TOOLS</span><b>✳</b><span>DIGITAL PRODUCTS</span><b>✳</b><span>CREATIVE THINKING</span></div></div>
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div><div class="kicker">01 / SELECTED WORK</div><h2>مشاريع من الفكرة إلى الواقع.</h2><p class="section-sub">مجموعة مختارة من الأعمال المنشورة على Vercel ومشاريع الشيفرة العامة على GitHub. اضغط على أي مشروع لاستكشافه.</p></div>
+      <span class="counter" aria-label="ثمانية مشاريع">08.</span>
+    </div>
+    <div class="filters reveal" role="group" aria-label="تصفية المشاريع">
+      <button class="filter active" data-filter="all" aria-pressed="true">جميع الأعمال</button>
+      <button class="filter" data-filter="live" aria-pressed="false">مواقع منشورة ↗</button>
+      <button class="filter" data-filter="code" aria-pressed="false">مشاريع GitHub</button>
+    </div>
+    <div class="project-grid">
+      <article class="project wide reveal" data-type="live">
+        <div class="preview nasam"><span class="pretag"><span class="live-dot"></span> نسخة منشورة</span><div class="perfume"></div><div class="art">نَسَم<small>NASAM / FRAGRANCE</small></div></div>
+        <div class="project-info"><div class="project-overline"><span>تصميم واجهات / تجارة إلكترونية</span><span>01 / 08</span></div><h3>نَسَم — تجربة متجر عطور</h3><p>نموذج بصري تفاعلي لهوية متجر عطور، بتجربة تصفح وصفحات منتجات وتفاصيل تصميمية متناسقة. نسخة استعراضية وليست متجرًا تشغيليًا.</p><div class="tags"><span>UI/UX</span><span>Brand Experience</span><span>Web Prototype</span></div><div class="project-actions"><a href="https://salla-fragrance-theme.vercel.app/" target="_blank" rel="noopener noreferrer">استكشف الموقع <span>↗</span></a></div></div>
+      </article>
+      <article class="project wide reveal" data-type="live">
+        <div class="preview mustawa"><span class="pretag"><span class="live-dot"></span> نسخة منشورة</span><div class="art">مستوى<b>↗</b><small>كل دورة ترفعك مستوى</small></div></div>
+        <div class="project-info"><div class="project-overline"><span>منصة محتوى / منتجات رقمية</span><span>02 / 08</span></div><h3>مستوى — أدلة رقمية عربية</h3><p>واجهة منصة لعرض أدلة تعليمية رقمية عربية، مع صفحات منتجات وتصنيفات وتجربة استكشاف مصممة للجمهور العربي.</p><div class="tags"><span>Next.js</span><span>Arabic UI</span><span>Digital Commerce</span></div><div class="project-actions"><a href="https://mustawa-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">استكشف الموقع <span>↗</span></a></div></div>
+      </article>
+      <article class="project wide reveal" data-type="live">
+        <div class="preview athar"><span class="pretag"><span class="live-dot"></span> نسخة منشورة</span><div class="envelope"></div><div class="art">أثرٌ من عسل<small>قصة تفاعلية بتفاصيل هادئة</small></div></div>
+        <div class="project-info"><div class="project-overline"><span>تجربة تفاعلية / قصص رقمية</span><span>03 / 08</span></div><h3>أثرٌ من عسل — تجربة تفاعلية</h3><p>تجربة ويب سردية بلمسات بصرية وتفاعلات متدرجة، تقدّم المحتوى الشخصي بأسلوب مختلف عن الصفحات التقليدية.</p><div class="tags"><span>Next.js</span><span>Interactive Story</span><span>Motion</span></div><div class="project-actions"><a href="https://33-azure-two.vercel.app/" target="_blank" rel="noopener noreferrer">استكشف الموقع <span>↗</span></a></div></div>
+      </article>
+      <article class="project wide reveal" data-type="code">
+        <div class="preview prompt"><span class="pretag">كود متاح على GitHub</span><span class="symbol">AI</span><span class="art-icon">P</span></div>
+        <div class="project-info"><div class="project-overline"><span>تحليل وسائط / ذكاء اصطناعي</span><span>04 / 08</span></div><h3>PromptVision AI</h3><p>أداة تعتمد على Gemini لتحليل الصور والفيديو وإنشاء مخرجات وملخصات تساعد على فهم المحتوى البصري.</p><div class="tags"><span>React</span><span>Gemini</span><span>Vite</span></div><div class="project-actions"><a href="https://github.com/3b7d/promptvision-ai" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a><a class="alt" href="https://ai.studio/apps/e945fb5f-8498-4b65-9959-9ec13c70ef7c" target="_blank" rel="noopener noreferrer">فتح في AI Studio ↗</a></div></div>
+      </article>
+    </div>
+    <div class="github-header reveal"><div style="font-size:30px">⌘</div><div><h3>تجارب ومشاريع أخرى</h3><p>شيفرات عامة وتطبيقات تجريبية ضمن معرض الأعمال.</p></div></div>
+    <div class="project-grid">
+      <article class="project small-project reveal" data-type="code"><div class="preview staging"><span class="pretag">GitHub / AI Studio</span><span class="symbol">01</span><span class="art-icon">⌂</span></div><div class="project-info"><div class="project-overline"><span>AI / INTERIOR DESIGN</span><span>05 / 08</span></div><h3>Virtual Staging</h3><p>تأثيث افتراضي للغرف بالذكاء الاصطناعي مع خيارات لأنواع المساحات وأنماط الديكور.</p><div class="tags"><span>React</span><span>Gemini</span></div><div class="project-actions"><a href="https://github.com/3b7d/virtual-staging-app" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
+      <article class="project small-project reveal" data-type="code"><div class="preview shield"><span class="pretag">GitHub</span><span class="symbol">02</span><span class="art-icon">◇</span></div><div class="project-info"><div class="project-overline"><span>SECURITY / DASHBOARD</span><span>06 / 08</span></div><h3>درع السيرفرات</h3><p>تصميم واجهة لتحليل سجلات الأمن السيبراني وعرض خطوات المعالجة في تجربة تفاعلية تجريبية.</p><div class="tags"><span>React</span><span>Security UI</span></div><div class="project-actions"><a href="https://github.com/3b7d/cayper" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
+      <article class="project small-project reveal" data-type="code"><div class="preview cards"><span class="pretag">GitHub</span><span class="symbol">03</span><span class="art-icon">▣</span></div><div class="project-info"><div class="project-overline"><span>DESIGN TOOLS / EXPORT</span><span>07 / 08</span></div><h3>مصمم بطاقات الفعاليات</h3><p>أداة لإعداد بطاقات الحضور من البيانات، وتخصيص التصميم، وإخراج البطاقات بصيغ متعددة مع QR.</p><div class="tags"><span>React</span><span>PDF</span><span>CSV</span></div><div class="project-actions"><a href="https://github.com/3b7d/card" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
+      <article class="project small-project reveal" data-type="code"><div class="preview ops"><span class="pretag">GitHub</span><span class="symbol">04</span><span class="art-icon">▥</span></div><div class="project-info"><div class="project-overline"><span>OPERATIONS / ANALYTICS</span><span>08 / 08</span></div><h3>لوحة تحليلات التشغيل</h3><p>تطبيق لعرض وتحليل بيانات مهام التوصيل، مع الفلاتر، ورفع Excel، ولوحات المعلومات.</p><div class="tags"><span>React</span><span>Excel</span><span>Dashboard</span></div><div class="project-actions"><a href="https://github.com/3b7d/os-" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
+    </div>
+  </div>
+</section>
+<section class="section about" id="about"><div class="container about-grid"><div class="about-picture reveal"><div class="big-letters">3B7D</div><div class="p-label">IDEAS / DESIGN / CODE</div></div><div class="reveal"><div class="kicker">02 / ABOUT</div><h2>أصنع، أجرّب، وأطوّر.</h2><p>أهتم بتحويل الأفكار إلى مشاريع رقمية ملموسة؛ من بناء واجهات متاجر وتجارب تفاعلية، إلى أدوات ذكاء اصطناعي ولوحات معلومات تساعد على عرض البيانات واتخاذ القرارات.</p><p>هنا تجد مزيجًا من المشاريع المنشورة والنماذج التجريبية. أحب البساطة في الاستخدام والاهتمام بالتفاصيل في التصميم.</p><div class="skill-grid"><span>واجهات ويب</span><span>React</span><span>Next.js</span><span>تجربة المستخدم</span><span>AI Prototyping</span><span>لوحات البيانات</span><span>Vercel</span><span>GitHub</span></div></div></div></section>
+<section class="contact" id="contact"><div class="container"><div class="contact-box reveal"><div class="over">LET'S BUILD SOMETHING INTERESTING</div><h2>عندك فكرة تستحق التجربة؟</h2><p>خلّنا نبدأ من الفكرة ونشوف كيف ممكن تتحول إلى شيء مميز.</p><a href="https://github.com/3b7d" target="_blank" rel="noopener noreferrer">تعرّف على أعمالي في GitHub <span>↗</span></a></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> — 3B7D. صُنعت بشغف للتجربة والتطوير.</span><div class="footer-links"><a href="#home">للأعلى ↑</a><a href="https://github.com/3b7d" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+<script>
+(function(){
+  document.getElementById('year').textContent=new Date().getFullYear();
+  var menu=document.getElementById('menu'), mobile=document.getElementById('mobile-nav');
+  menu.addEventListener('click',function(){var open=mobile.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰';});
+  mobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobile.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';});});
+  var theme=document.getElementById('theme');
+  theme.addEventListener('click',function(){document.body.classList.toggle('light');var light=document.body.classList.contains('light');theme.textContent=light?'☀':'☾';try{localStorage.setItem('p-theme',light?'light':'dark')}catch(e){}});
+  try{if(localStorage.getItem('p-theme')==='light'){document.body.classList.add('light');theme.textContent='☀';}}catch(e){}
+  var filters=document.querySelectorAll('.filter'), projects=document.querySelectorAll('[data-type]');
+  filters.forEach(function(btn){btn.addEventListener('click',function(){var f=btn.dataset.filter;filters.forEach(function(b){b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',String(b===btn))});projects.forEach(function(p){p.classList.toggle('hidden',f!=='all'&&p.dataset.type!==f)})})});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(function(e){io.observe(e)})}else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in')})}
+})();
+</script>
+</body></html>
