@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b1018">
-<meta name="description" content="3B7D — معرض أعمال رقمية يضم مواقع ويب منشورة وتجارب ذكاء اصطناعي ومشاريع تصميم وتطوير.">
+<meta name="description" content="3B7D — معرض مواقع وأعمال رقمية منشورة على Vercel.">
 <meta property="og:title" content="3B7D — أعمالي الرقمية">
-<meta property="og:description" content="أفكار تتحول إلى منتجات وتجارب رقمية قابلة للاستكشاف.">
+<meta property="og:description" content="مجموعة مواقع منشورة على Vercel قابلة للاستكشاف.">
 <meta property="og:type" content="website">
 <title>3B7D — أعمالي الرقمية | Digital Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,6 +149,16 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:f
 .about-grid{grid-template-columns:1fr;gap:35px}.about-picture{height:240px}.about-picture .big-letters{font-size:95px;letter-spacing:-7px}.contact{padding:70px 0}.contact-box{min-height:300px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.halo{animation:none}*{transition-duration:0s!important}}
+
+.preview.devhub{background:radial-gradient(circle at 30% 0%,#176572,#101f38 76%)}
+.preview.ebaa{background:radial-gradient(circle at 35% 0%,#4d807a,#192f38 76%)}
+.app-window{width:78%;height:185px;background:#eaf4f5;border-radius:13px 13px 0 0;box-shadow:0 20px 60px #061f2b70;transform:perspective(700px) rotateY(7deg) rotate(-3deg) translateY(15px);position:relative;z-index:1;overflow:hidden;border:1px solid #d5e3e8}
+.app-top{height:30px;background:#183849;color:#d8eff1;display:flex;justify-content:space-between;align-items:center;padding:0 13px;font-weight:700;font-size:11px}
+.app-body{display:flex;height:calc(100% - 30px);background:#f0f6f7}
+.app-sidebar{width:27%;padding:23px 12px;background:#1f3d50;display:flex;flex-direction:column;gap:13px}.app-sidebar i{height:6px;width:100%;background:#5f8390;border-radius:10px}.app-sidebar i:nth-child(2){width:80%}.app-sidebar i:nth-child(3){width:90%}
+.app-main{padding:22px 17px;width:73%;color:#244454}.app-heading{font-weight:700;font-size:14px}.app-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:19px}.app-bars i{height:49px;border-radius:7px;background:#c4dfe2}.app-bars i:nth-child(2){background:#b3d8d1}.app-bars i:nth-child(3){background:#d4e6ef}
+.ebaa-window .app-top{background:#174c44}.ebaa-window .app-sidebar{background:#21665a}
+.ebaa-window .app-sidebar i{background:#64a394}.ebaa-window .app-main{color:#24584e}.ebaa-window .app-bars i{background:#beddd2}
 </style>
 </head>
 <body>
@@ -175,9 +185,9 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:f
       <p>أهتم بصناعة الحلول الرقمية وتصميم تجارب ويب تجمع بين الفكرة الواضحة، التفاصيل الجميلة، والتنفيذ العملي. هنا مساحة أجمع فيها أعمالي وتجربتي مع التقنية والذكاء الاصطناعي.</p>
       <div class="hero-buttons">
         <a class="btn-primary" href="#projects">شاهد المشاريع <span>↙</span></a>
-        <a class="btn-secondary" href="https://github.com/3b7d" target="_blank" rel="noopener noreferrer">حسابي على GitHub <span>↗</span></a>
+        <a class="btn-secondary" href="#contact">نبذة وتواصل <span>↗</span></a>
       </div>
-      <div class="hero-note"><div class="avatars" aria-hidden="true"><span>W</span><span>AI</span><span>UX</span></div><span>تصميم ويب · تطوير · أدوات ذكاء اصطناعي</span></div>
+      <div class="hero-note"><div class="avatars" aria-hidden="true"><span>W</span><span>AI</span><span>UX</span></div><span>تصميم ويب · تجارب رقمية · أدوات ذكية</span></div>
     </div>
     <div class="hero-visual" aria-hidden="true">
       <div class="halo"></div>
@@ -199,45 +209,33 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:f
 <section class="section" id="projects">
   <div class="container">
     <div class="section-heading reveal">
-      <div><div class="kicker">01 / SELECTED WORK</div><h2>مشاريع من الفكرة إلى الواقع.</h2><p class="section-sub">مجموعة مختارة من الأعمال المنشورة على Vercel ومشاريع الشيفرة العامة على GitHub. اضغط على أي مشروع لاستكشافه.</p></div>
-      <span class="counter" aria-label="ثمانية مشاريع">08.</span>
-    </div>
-    <div class="filters reveal" role="group" aria-label="تصفية المشاريع">
-      <button class="filter active" data-filter="all" aria-pressed="true">جميع الأعمال</button>
-      <button class="filter" data-filter="live" aria-pressed="false">مواقع منشورة ↗</button>
-      <button class="filter" data-filter="code" aria-pressed="false">مشاريع GitHub</button>
+      <div><div class="kicker">01 / LIVE WEBSITES</div><h2>مواقعي المنشورة.</h2><p class="section-sub">تصفح المشاريع المنشورة على Vercel مباشرة. كل بطاقة تفتح الموقع الفعلي، بدون روابط أكواد أو مستودعات.</p></div>
+      <span class="counter" aria-label="أربعة مواقع">04.</span>
     </div>
     <div class="project-grid">
-      <article class="project wide reveal" data-type="live">
-        <div class="preview nasam"><span class="pretag"><span class="live-dot"></span> نسخة منشورة</span><div class="perfume"></div><div class="art">نَسَم<small>NASAM / FRAGRANCE</small></div></div>
-        <div class="project-info"><div class="project-overline"><span>تصميم واجهات / تجارة إلكترونية</span><span>01 / 08</span></div><h3>نَسَم — تجربة متجر عطور</h3><p>نموذج بصري تفاعلي لهوية متجر عطور، بتجربة تصفح وصفحات منتجات وتفاصيل تصميمية متناسقة. نسخة استعراضية وليست متجرًا تشغيليًا.</p><div class="tags"><span>UI/UX</span><span>Brand Experience</span><span>Web Prototype</span></div><div class="project-actions"><a href="https://salla-fragrance-theme.vercel.app/" target="_blank" rel="noopener noreferrer">استكشف الموقع <span>↗</span></a></div></div>
+      <article class="project wide reveal">
+        <div class="preview nasam"><span class="pretag"><span class="live-dot"></span> موقع منشور</span><div class="perfume"></div><div class="art">نَسَم<small>NASAM / FRAGRANCE</small></div></div>
+        <div class="project-info"><div class="project-overline"><span>تصميم واجهات / تجارة إلكترونية</span><span>01 / 04</span></div><h3>نَسَم — متجر العطور</h3><p>تجربة بصرية لهوية متجر عطور مع صفحات منتجات وتصميم أنيق ومتناسق. نسخة استعراضية تفاعلية.</p><div class="tags"><span>تصميم متجر</span><span>تجربة مستخدم</span><span>نموذج تفاعلي</span></div><div class="project-actions"><a href="https://salla-fragrance-theme.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع نسم">زيارة الموقع <span>↗</span></a></div></div>
       </article>
-      <article class="project wide reveal" data-type="live">
-        <div class="preview mustawa"><span class="pretag"><span class="live-dot"></span> نسخة منشورة</span><div class="art">مستوى<b>↗</b><small>كل دورة ترفعك مستوى</small></div></div>
-        <div class="project-info"><div class="project-overline"><span>منصة محتوى / منتجات رقمية</span><span>02 / 08</span></div><h3>مستوى — أدلة رقمية عربية</h3><p>واجهة منصة لعرض أدلة تعليمية رقمية عربية، مع صفحات منتجات وتصنيفات وتجربة استكشاف مصممة للجمهور العربي.</p><div class="tags"><span>Next.js</span><span>Arabic UI</span><span>Digital Commerce</span></div><div class="project-actions"><a href="https://mustawa-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">استكشف الموقع <span>↗</span></a></div></div>
+      <article class="project wide reveal">
+        <div class="preview mustawa"><span class="pretag"><span class="live-dot"></span> موقع منشور</span><div class="art">مستوى<b>↗</b><small>كل دورة ترفعك مستوى</small></div></div>
+        <div class="project-info"><div class="project-overline"><span>منتجات ومحتوى رقمي</span><span>02 / 04</span></div><h3>مستوى — الأدلة الرقمية</h3><p>منصة عربية لاستكشاف المحتوى التعليمي والأدلة الرقمية، مع أقسام المنتجات والتصنيفات وصفحات العرض.</p><div class="tags"><span>منصة رقمية</span><span>واجهة عربية</span><span>منتجات</span></div><div class="project-actions"><a href="https://mustawa-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع مستوى">زيارة الموقع <span>↗</span></a></div></div>
       </article>
-      <article class="project wide reveal" data-type="live">
-        <div class="preview athar"><span class="pretag"><span class="live-dot"></span> نسخة منشورة</span><div class="envelope"></div><div class="art">أثرٌ من عسل<small>قصة تفاعلية بتفاصيل هادئة</small></div></div>
-        <div class="project-info"><div class="project-overline"><span>تجربة تفاعلية / قصص رقمية</span><span>03 / 08</span></div><h3>أثرٌ من عسل — تجربة تفاعلية</h3><p>تجربة ويب سردية بلمسات بصرية وتفاعلات متدرجة، تقدّم المحتوى الشخصي بأسلوب مختلف عن الصفحات التقليدية.</p><div class="tags"><span>Next.js</span><span>Interactive Story</span><span>Motion</span></div><div class="project-actions"><a href="https://33-azure-two.vercel.app/" target="_blank" rel="noopener noreferrer">استكشف الموقع <span>↗</span></a></div></div>
+      <article class="project wide reveal">
+        <div class="preview devhub"><span class="pretag"><span class="live-dot"></span> موقع منشور</span><div class="app-window"><div class="app-top"><span>DevHub</span><span>•••</span></div><div class="app-body"><div class="app-sidebar"><i></i><i></i><i></i><i></i></div><div class="app-main"><div class="app-heading">مركز إدارة قسم التطوير</div><div class="app-bars"><i></i><i></i><i></i></div></div></div></div></div>
+        <div class="project-info"><div class="project-overline"><span>نظام لإدارة الأعمال</span><span>03 / 04</span></div><h3>DevHub — مركز قسم التطوير</h3><p>واجهة لإدارة المهام والمشاريع والتقارير ومتابعة العمل داخل القسم. الموقع منشور ويتطلب تسجيل دخول.</p><div class="tags"><span>لوحة تحكم</span><span>إدارة مهام</span><span>يتطلب تسجيل دخول</span></div><div class="project-actions"><a href="https://dev-orcin-eta.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع DevHub">زيارة الموقع <span>↗</span></a></div></div>
       </article>
-      <article class="project wide reveal" data-type="code">
-        <div class="preview prompt"><span class="pretag">كود متاح على GitHub</span><span class="symbol">AI</span><span class="art-icon">P</span></div>
-        <div class="project-info"><div class="project-overline"><span>تحليل وسائط / ذكاء اصطناعي</span><span>04 / 08</span></div><h3>PromptVision AI</h3><p>أداة تعتمد على Gemini لتحليل الصور والفيديو وإنشاء مخرجات وملخصات تساعد على فهم المحتوى البصري.</p><div class="tags"><span>React</span><span>Gemini</span><span>Vite</span></div><div class="project-actions"><a href="https://github.com/3b7d/promptvision-ai" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a><a class="alt" href="https://ai.studio/apps/e945fb5f-8498-4b65-9959-9ec13c70ef7c" target="_blank" rel="noopener noreferrer">فتح في AI Studio ↗</a></div></div>
+      <article class="project wide reveal">
+        <div class="preview ebaa"><span class="pretag"><span class="live-dot"></span> موقع منشور</span><div class="app-window ebaa-window"><div class="app-top"><span>إباء للزيارات</span><span>•••</span></div><div class="app-body"><div class="app-sidebar"><i></i><i></i><i></i><i></i></div><div class="app-main"><div class="app-heading">إدارة زيارات العملاء</div><div class="app-bars"><i></i><i></i><i></i></div></div></div></div></div>
+        <div class="project-info"><div class="project-overline"><span>إدارة العملاء والزيارات</span><span>04 / 04</span></div><h3>إباء للزيارات</h3><p>نظام لإدارة زيارات العملاء في المعارض ومتابعتهم، مع لوحات بيانات وتقارير. الموقع منشور ويتطلب تسجيل دخول.</p><div class="tags"><span>إدارة زيارات</span><span>تقارير</span><span>يتطلب تسجيل دخول</span></div><div class="project-actions"><a href="https://ebaa-drab.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع إباء للزيارات">زيارة الموقع <span>↗</span></a></div></div>
       </article>
-    </div>
-    <div class="github-header reveal"><div style="font-size:30px">⌘</div><div><h3>تجارب ومشاريع أخرى</h3><p>شيفرات عامة وتطبيقات تجريبية ضمن معرض الأعمال.</p></div></div>
-    <div class="project-grid">
-      <article class="project small-project reveal" data-type="code"><div class="preview staging"><span class="pretag">GitHub / AI Studio</span><span class="symbol">01</span><span class="art-icon">⌂</span></div><div class="project-info"><div class="project-overline"><span>AI / INTERIOR DESIGN</span><span>05 / 08</span></div><h3>Virtual Staging</h3><p>تأثيث افتراضي للغرف بالذكاء الاصطناعي مع خيارات لأنواع المساحات وأنماط الديكور.</p><div class="tags"><span>React</span><span>Gemini</span></div><div class="project-actions"><a href="https://github.com/3b7d/virtual-staging-app" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
-      <article class="project small-project reveal" data-type="code"><div class="preview shield"><span class="pretag">GitHub</span><span class="symbol">02</span><span class="art-icon">◇</span></div><div class="project-info"><div class="project-overline"><span>SECURITY / DASHBOARD</span><span>06 / 08</span></div><h3>درع السيرفرات</h3><p>تصميم واجهة لتحليل سجلات الأمن السيبراني وعرض خطوات المعالجة في تجربة تفاعلية تجريبية.</p><div class="tags"><span>React</span><span>Security UI</span></div><div class="project-actions"><a href="https://github.com/3b7d/cayper" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
-      <article class="project small-project reveal" data-type="code"><div class="preview cards"><span class="pretag">GitHub</span><span class="symbol">03</span><span class="art-icon">▣</span></div><div class="project-info"><div class="project-overline"><span>DESIGN TOOLS / EXPORT</span><span>07 / 08</span></div><h3>مصمم بطاقات الفعاليات</h3><p>أداة لإعداد بطاقات الحضور من البيانات، وتخصيص التصميم، وإخراج البطاقات بصيغ متعددة مع QR.</p><div class="tags"><span>React</span><span>PDF</span><span>CSV</span></div><div class="project-actions"><a href="https://github.com/3b7d/card" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
-      <article class="project small-project reveal" data-type="code"><div class="preview ops"><span class="pretag">GitHub</span><span class="symbol">04</span><span class="art-icon">▥</span></div><div class="project-info"><div class="project-overline"><span>OPERATIONS / ANALYTICS</span><span>08 / 08</span></div><h3>لوحة تحليلات التشغيل</h3><p>تطبيق لعرض وتحليل بيانات مهام التوصيل، مع الفلاتر، ورفع Excel، ولوحات المعلومات.</p><div class="tags"><span>React</span><span>Excel</span><span>Dashboard</span></div><div class="project-actions"><a href="https://github.com/3b7d/os-" target="_blank" rel="noopener noreferrer">عرض الكود ↗</a></div></div></article>
     </div>
   </div>
 </section>
-<section class="section about" id="about"><div class="container about-grid"><div class="about-picture reveal"><div class="big-letters">3B7D</div><div class="p-label">IDEAS / DESIGN / CODE</div></div><div class="reveal"><div class="kicker">02 / ABOUT</div><h2>أصنع، أجرّب، وأطوّر.</h2><p>أهتم بتحويل الأفكار إلى مشاريع رقمية ملموسة؛ من بناء واجهات متاجر وتجارب تفاعلية، إلى أدوات ذكاء اصطناعي ولوحات معلومات تساعد على عرض البيانات واتخاذ القرارات.</p><p>هنا تجد مزيجًا من المشاريع المنشورة والنماذج التجريبية. أحب البساطة في الاستخدام والاهتمام بالتفاصيل في التصميم.</p><div class="skill-grid"><span>واجهات ويب</span><span>React</span><span>Next.js</span><span>تجربة المستخدم</span><span>AI Prototyping</span><span>لوحات البيانات</span><span>Vercel</span><span>GitHub</span></div></div></div></section>
-<section class="contact" id="contact"><div class="container"><div class="contact-box reveal"><div class="over">LET'S BUILD SOMETHING INTERESTING</div><h2>عندك فكرة تستحق التجربة؟</h2><p>خلّنا نبدأ من الفكرة ونشوف كيف ممكن تتحول إلى شيء مميز.</p><a href="https://github.com/3b7d" target="_blank" rel="noopener noreferrer">تعرّف على أعمالي في GitHub <span>↗</span></a></div></div></section>
+<section class="section about" id="about"><div class="container about-grid"><div class="about-picture reveal"><div class="big-letters">3B7D</div><div class="p-label">IDEAS / DESIGN / CODE</div></div><div class="reveal"><div class="kicker">02 / ABOUT</div><h2>أصنع، أجرّب، وأطوّر.</h2><p>أهتم بتحويل الأفكار إلى مشاريع رقمية ملموسة؛ من بناء واجهات متاجر وتجارب تفاعلية، إلى أدوات ذكاء اصطناعي ولوحات معلومات تساعد على عرض البيانات واتخاذ القرارات.</p><p>هنا تجد مزيجًا من المواقع المنشورة والتجارب الرقمية. أحب البساطة في الاستخدام والاهتمام بالتفاصيل في التصميم.</p><div class="skill-grid"><span>واجهات ويب</span><span>React</span><span>Next.js</span><span>تجربة المستخدم</span><span>AI Prototyping</span><span>لوحات البيانات</span><span>Vercel</span><span>مشاريع ويب</span></div></div></div></section>
+<section class="contact" id="contact"><div class="container"><div class="contact-box reveal"><div class="over">LET'S BUILD SOMETHING INTERESTING</div><h2>عندك فكرة تستحق التجربة؟</h2><p>خلّنا نبدأ من الفكرة ونشوف كيف ممكن تتحول إلى شيء مميز.</p><a href="#projects">استكشف مواقعي المنشورة <span>↗</span></a></div></div></section>
 </main>
-<footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> — 3B7D. صُنعت بشغف للتجربة والتطوير.</span><div class="footer-links"><a href="#home">للأعلى ↑</a><a href="https://github.com/3b7d" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+<footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> — 3B7D. صُنعت بشغف للتجربة والتطوير.</span><div class="footer-links"><a href="#home">للأعلى ↑</a><a href="#projects">المشاريع ↗</a></div></div></footer>
 <script>
 (function(){
   document.getElementById('year').textContent=new Date().getFullYear();
